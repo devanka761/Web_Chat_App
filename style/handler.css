@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+
+/* INSTALASI STYLE FILE PESAN - GANTI SESUAI SELERA */
+video {
+  width: 300px;
+  border-radius: 5px;
+}
+img{
+  max-width: 300px;
+  max-height: 300px;
+  border-radius: 5px;
+  }
+audio{
+  width: 300px;
+  background-color: #f0f0f0;
+  border-radius: 3px;
+}
+/* PONDASI STYLE CHAT APP - GANTI SESUAI SELERA */
+body {
+  background: #ffc1d0;
+  padding: 0;
+  margin: 0;
+  transition: 0.5s;
+}
+body.gelap {
+  background: #001111;
+}
+.header {
+  height: 60px;
+  width: 100%;
+  text-align: center;
+  font-family: 'Dosis', sans-serif;
+  background-color: #ffa6bc;
+  border-bottom: 3px solid #ff0040;
+  color: white;
+  padding-top: 10px;
+  font-size: 35px;
+  transition: 0.5s;
+}
+body.gelap .header {
+  background-color: #002222;
+  color: #dddddd;
+  border-bottom: 3px solid cyan;
+}
+.message-body {
+  height: 200px;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+.footer {
+  position: absolute;
+  height: 60px;
+  width: 100%;
+  margin: auto;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+.message-input {
+  height: 0;
+  width: 80%;
+  padding: 20px;
+  padding-left: 45px;
+  margin-top: 10px;
+  font-size: 17px;
+  outline: none;
+  color: black;
+  font-family: 'Dosis', sans-serif;
+  background: #ffa6bc;
+  border: 3px solid #ff0040;
+  border-radius: 20px;
+  transition: 0.3s;
+  transition: 0.5s;
+}
+.message-input::placeholder {
+  color: #444444;
+  transition: 0.5s;
+}
+body.gelap .message-input {
+  color: white;
+  background: #002222;
+  border: 3px solid cyan;
+}
+body.gelap .message-input::placeholder {
+  color: #cccccc;
+}
+#emot {
+  position: absolute;
+  top: 17px;
+  margin-left: 10px;
+  font-size: 35px;
+  cursor: pointer;
+  color: #444444;
+  transition: 0.5s;
+}
+#emot:hover {
+  color: #ff0040;
+}
+body.gelap #emot {
+  color: #cccccc;
+}
+body.gelap #emot:hover {
+  color: cyan;
+}
+.message-holder {
+  width: 100%;
+  height: fit-content;
+  margin-bottom: 5px;
+  display: inline-flex;
+  font-size: 17px;
+}
+.my-text {
+  height: fit-content;
+  width: fit-content;
+  padding: 10px;
+  color: #1b1b1b;
+  font-family: 'Dosis', sans-serif;
+  background: white;
+  border: 2px solid transparent;
+  margin-left: auto;
+  right: 0;
+  max-width: 300px;
+  border-radius: 7px;
+  margin-right: 20px;
+  transition: 0.5s;
+}
+body.gelap .my-text {
+  background: #1b1b1b;
+  color: #dddddd;
+  border: 2px solid cyan;
+}
+.their-name {
+  color: #1b1b1b;
+  font-family: 'Dosis', sans-serif;
+  height: fit-content;
+  width: fit-content;
+  margin-right: auto;
+  left: 0;
+  margin-left: 25px;
+  margin-bottom: 5px;
+}
+body.gelap .their-name {
+  color: #dedede;
+}
+.my-name {
+  color: #1b1b1b;
+  font-family: 'Dosis', sans-serif;
+  height: fit-content;
+  width: fit-content;
+  margin-left: auto;
+  right: 0;
+  margin-right: 25px;
+  margin-bottom: 5px;
+}
+body.gelap .my-name {
+  color: #dedede;
+}
+.their-text {
+  height: fit-content;
+  width: fit-content;
+  padding: 10px;
+  color: white;
+  font-family: 'Dosis', sans-serif;
+  background: #ff0040;
+  margin-right: auto;
+  left: 0;
+  max-width: 300px;
+  border-radius: 4px;
+  margin-left: 20px;
+  transition: 0.5s;
+}
+body.gelap .their-text { 
+  background: #134747;
+  color: #dddddd;
+}
+.deskripsi {
+  line-height: 0;
+  text-align: center;
+  font-style: italic;
+  font-size: 14px;
+}
+.loader {
+  position: absolute;
+  height: 100px;
+  margin: auto;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  opacity: 1;
+  transition: 0.2s;
+}
+
+/* INSTALASI TOMBOL BAR ATAS - GANTI SESUAI SELERA */
+.stop{
+  width: 33px;
+  height: 33px;
+  display: inline;
+  position: absolute;
+  border-radius: 5px;
+  right: 70px;
+  top: 20px;
+  font-size: 32px;
+  background-color: white;
+  transition: 0.5s;
+}
+.stop:hover{
+  background-color: #ff0040;
+}
+body.gelap .stop {
+  background: grey;
+}
+body.gelap .stop:hover {
+  background: cyan;
+}
+.fa-microphone{
+  display: inline;
+  position: absolute;
+  right: 70px;
+  top: 20px;
+  font-size: 35px;
+}
+.fa-microphone:hover{
+  color: #ff0040;
+}
+body.gelap .fa-microphone:hover {
+  color: cyan;
+}
+.fa-refresh {
+  position: absolute;
+  left: 80px;
+  top: 18.5px;
+  font-size: 35px;
+}
+.fa-refresh:hover {
+  color: #ff0040;
+}
+body.gelap .fa-refresh:hover {
+  color: cyan;
+}
+
+#bukak {
+  position: absolute;
+  background: none;
+  right: 15px;
+  border: none;
+  top: 7px;
+  font-size: 36px;
+  color: white;
+  cursor: pointer;
+  transition: 0.5s;
+}
+#bukak:hover {
+  color: #ff0040;
+}
+body.gelap #bukak {
+  color: #dddddd;
+}
+body.gelap #bukak:hover {
+  color: cyan;
+}
+.dropdown {
+  position: relative;
+  display: inline-flex;
+}
+.dropdown-content {
+  display: none;
+  background-color: #000000;
+  border-radius: 5px;
+  min-width: 50px;
+  overflow: auto;
+  right: 53px;
+  top: 2px;
+  z-index: 1;
+  cursor: pointer;
+  transition: 0.5s;
+}
+body.gelap .dropdown-content {
+  border: 2px solid cyan;
+  top: 0;
+}
+.dropdown-content i {
+  font-size: 30px;
+  color: white;
+  border-radius: 5px;
+  padding: 8px 10px;
+  text-decoration: none;
+  display: inline-flex;
+}
+body.gelap .dropdown-content i {
+  color: #eeeeee;
+}
+.dropdown i:hover {
+  color: #ffa6bc;
+}
+body.gelap .dropdown i:hover {
+  color: cyan;
+}
+.show {display: inline-flex;
+position: absolute;
+}
+#theme {
+  position: absolute;
+  background: none;
+  left: 15px;
+  border: none;
+  top: 18px;
+  font-size: 35px;
+  color: white;
+  cursor: pointer;
+}
+body.gelap #theme {
+  color: #dddddd;
+}
+#theme:hover {
+  color: #ff0040;
+}
+body.gelap #theme:hover {
+  color: cyan;
+}
+
+/* INSTALASI POP UP */
+.swal-title{
+  color: #ff0040;
+  font-family: 'Dosis', sans-serif;
+}
+body.gelap .swal-title {
+  color: cyan;
+}
+.swal-text {
+  color: white;
+  font-size: 20px;
+  font-family: 'Dosis', sans-serif;
+}
+.swal-button {
+  background-color: #140005;
+}
+body.gelap .swal-button{
+  background-color: #002929;
+}
+.swal-overlay swal-overlay--show-modal ::before {
+  outline: none;
+}
+.swal-modal {
+  background-color: #240009;
+}
+body.gelap .swal-modal {
+  background-color: #001414;
+}
+
+/* STYLE SCROLL BAR - GANTI SESUAI SELERA */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: none;
+}
+::-webkit-scrollbar-thumb {
+  background: #ff0040;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+body.gelap ::-webkit-scrollbar-thumb {
+  background: cyan;
+}
